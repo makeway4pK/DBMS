@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:text="@string/title_new"
+        />
+    <TableLayout
+        android:id="@+id/add_form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title3"
+        android:orientation="vertical">
+
+        <TableRow>
+
+            <TextView
+                android:text="@string/field1"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/addField1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/field1"
+                android:ems="10"
+                android:layout_marginLeft="50dp"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="@string/field2"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/addField2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/field2"
+                android:ems="10"
+                android:layout_marginLeft="50dp"
+                android:inputType="textWebEditText"
+                android:imeOptions="actionNext"
+                />
+        </TableRow>
+
+        <TableRow>
+
+
+            <TextView
+                android:text="@string/field3"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/addField3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/field3"
+                android:ems="10"
+                android:layout_marginLeft="50dp"
+                android:inputType="textWebEditText"
+                android:imeOptions="actionDone"
+                />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:srcCompat="@android:drawable/ic_menu_save" />
+        </TableRow>
+
+    </TableLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linlay3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/add_form"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/table_head"
+            android:padding="10dp">
+
+            <TableRow>
+
+                <TextView
+                    android:ems="2"
+                    android:text="@string/field1"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+
+                    />
+
+                <TextView
+                    android:ems="10"
+                    android:text="@string/field2"
+                    android:textColor="#000"
+
+                    android:textSize="20sp"
+
+                    />
+
+                <TextView
+                    android:text="@string/field3"
+                    android:textColor="#000"
+
+                    android:textSize="20sp"
+
+                    />
+
+            </TableRow>
+        </TableLayout>
+
+
+        <ListView
+            android:id="@+id/list3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/divider"
+            android:dividerHeight="1dp"></ListView>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

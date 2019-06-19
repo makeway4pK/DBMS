@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DBMS</string>
+    <string name="title_home">View All</string>
+    <string name="title_dashboard">Search</string>
+    <string name="title_new">Add Records</string>
+    <string name="field1">ID</string>
+    <string name="field2">Name</string>
+    <string name="field3">Stock</string>
+    <string name="crLink"><a href="http://github.com/makeway4pk/">github.com/makeway4pK</a></string>
+
+</resources>

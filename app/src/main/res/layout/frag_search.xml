@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+
+    >
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/title_dashboard"
+        android:textColor="#000"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/search_radioGrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title2">
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/field1"
+            android:textSize="25sp"
+            />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textSize="25sp"
+
+            android:text="@string/field2" />
+
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+
+            android:text="@string/field3" />
+
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:id="@+id/editQry"
+        android:textSize="25sp"
+
+        android:layout_height="wrap_content"
+        android:layout_above="@id/linlay2"
+        android:layout_toRightOf="@id/search_radioGrp"
+        android:hint="@string/field2"
+        android:gravity="center"
+        android:inputType="textWebEditText"
+        android:imeOptions="actionDone"
+        android:layout_alignParentRight="true"
+        />
+
+    <LinearLayout
+        android:id="@+id/linlay2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_radioGrp"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/table_head"
+            android:padding="10dp">
+
+            <TableRow>
+
+                <TextView
+                    android:ems="2"
+                    android:text="@string/field1"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+
+                    />
+
+                <TextView
+                    android:ems="10"
+                    android:text="@string/field2"
+                    android:textColor="#000"
+
+                    android:textSize="20sp"
+
+                    />
+
+                <TextView
+                    android:text="@string/field3"
+                    android:textColor="#000"
+
+                    android:textSize="20sp"
+
+                    />
+
+            </TableRow>
+        </TableLayout>
+
+
+        <ListView
+            android:id="@+id/list2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/divider"
+            android:dividerHeight="1dp"></ListView>
+    </LinearLayout>
+
+
+</RelativeLayout>

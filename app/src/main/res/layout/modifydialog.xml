@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:gravity="center" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    >
+
+    <TableLayout
+        android:id="@+id/mod_form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TableRow>
+
+            <TextView
+                android:text="@string/field1"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/modField1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/field1"
+                android:ems="10"
+                android:layout_marginLeft="50dp"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="@string/field2"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/modField2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/field2"
+                android:ems="10"
+                android:layout_marginLeft="50dp"
+                android:inputType="textWebEditText"
+                android:imeOptions="actionNext"
+                />
+        </TableRow>
+
+        <TableRow>
+
+
+            <TextView
+                android:text="@string/field3"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/modField3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/field3"
+                android:ems="10"
+                android:layout_marginLeft="50dp"
+                android:inputType="textWebEditText"
+                android:imeOptions="actionDone"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
